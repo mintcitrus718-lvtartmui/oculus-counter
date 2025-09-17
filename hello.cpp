@@ -6,7 +6,7 @@ int element;
 int level;
 int extra;
 int backpack;
-int s07;
+int so7;
 int remain;
 
 int main(){
