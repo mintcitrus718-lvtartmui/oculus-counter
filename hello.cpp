@@ -42,8 +42,42 @@ int main(){
         So7 += anemo[i];
         remain = 66-So7-extra-backpack;
         cout << remain;
-        case 2:
-          So7 += 
+      }
+      case 2:
+        for(int i=0;i<level;i++){
+          So7 += geo[i];
+          remain = 131-So7-extra-backpack;
+          cout << remain;
+      }
+      case 3:
+        for(int i=0;i<level;i++){
+          So7 += electro[i];
+          remain = 181-So7-extra-backpack;
+          cout << remain;
+      }
+      case 4:
+        for(int i=0;i<level;i++){
+          So7 += dendro[i];
+          remain = 271-So7-extra-backpack;
+          cout << remain;
+      }
+      case 5:
+        for(int i=0;i<level;i++){
+          So7 += hydro[i];
+          remain = 271-So7-extra-backpack;
+          cout << remain;
+      }
+      case 6:
+        for(int i=0;i<level;i++){
+          So7 += pyro[i];
+          remain = 271-So7-extra-backpack;
+          cout << remain;
+      }
+      case 7:
+        for(int i=0;i<level;i++){
+          So7 += newmoon[i];
+          remain = 125-So7-extra-backpack;    //临时
+          cout << remain;
       }
     }
 }
