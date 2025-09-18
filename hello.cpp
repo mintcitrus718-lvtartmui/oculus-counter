@@ -6,7 +6,7 @@ int element;
 int level;
 int extra;
 int backpack;
-int so7;
+int So7;
 int remain;
 
 int main(){
@@ -19,22 +19,22 @@ int main(){
   int pyro[9] = {20,22,25,28,30,32,35,38,40};
   int newmoon[5] = {20,22,25,28,30};            //挪德地图不完整，仅支持5级，游戏版更后更新
   
-  cout <<"请输入神瞳种类"<< endl；
-  cout＜<"风神瞳［1］/n"；
-  cout<<"岩神瞳［2］/n"；
-  cout << "雷神瞳［3］/n"；
-  cout <<"草神瞳［4］/n"；
-  cout << "水神瞳［5］/n"；
-  cout<<"火神瞳［6］/n"；
-  cout << "月神瞳［7］/n"；
+  cout <<"请输入神瞳种类"<< endl;
+  cout <<"风神瞳［1］\n";
+  cout <<"岩神瞳［2］\n";
+  cout << "雷神瞳［3］\n";
+  cout <<"草神瞳［4］\n";
+  cout << "水神瞳［5］\n";
+  cout <<"火神瞳［6］\n";
+  cout << "月神瞳［7］\n";
   cin>>element;
-  cout<<"请输入神像等级"；
-  cin >>Level；
-  cout <<"请输入神瞳溢出数量"；
+  cout<<"请输入神像等级\n";
+  cin >> level;
+  cout <<"请输入神瞳溢出数量\n";
   cin >> extra;
   
-  cout <<"请输入背包内神瞳数量"；
-  cin › backpack;
+  cout <<"请输入背包内神瞳数量\n";
+  cin >> backpack;
   
   switch (element){
     case 1:
@@ -72,6 +72,15 @@ int main(){
           So7 += pyro[i];
           remain = 271-So7-extra-backpack;
           cout << remain;
+      }
+      case 7:
+        for(int i=0;i<level;i++){
+          So7 += newmoon[i];
+          remain = 125-So7-extra-backpack;    //临时
+          cout << remain;
+      }
+    }
+}
       }
       case 7:
         for(int i=0;i<level;i++){
