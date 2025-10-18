@@ -20,6 +20,7 @@ int main(){
   int newmoon[6] = {0,20,22,25,28,30};            //挪德地图不完整，仅支持5级，游戏版更后更新
   
   cout <<"感谢使用桔牌神瞳计算器！！请根据提示输入数据（新地区更新请戳我）\n" ; 
+  cout <<"目前版本支持截至原神6.1版本的神瞳計算" ; 
   cout <<"tip: 打开供奉神像界面即可查看所有所需资料\n" << "----------------ヾ(≧▽≦*)o-------------------------\n";
   
   cout <<"请输入神瞳种类"<< endl;
@@ -46,7 +47,6 @@ int main(){
 	        	So7 += anemo[i];
 			}
 			remain = 66-So7-extra-backpack;	//已核对 
-	    	cout << remain;
 			break;
 	    	
 		case 2:
@@ -55,7 +55,6 @@ int main(){
 			
 			}
 			remain = 131-So7-extra-backpack;	//已核对 
-			cout << remain << endl;
 			break;
 		case 3:
 			for(int i=0;i<level;i++){
@@ -63,35 +62,34 @@ int main(){
 			  
 			}
 	    	remain = 181-So7-extra-backpack;	//已核对 
-			cout << remain << endl;
-		  break;
+			break;
 		case 4:
 	        for(int i=0;i<level;i++){
 	          So7 += dendro[i];
 	        }
 			remain = 271-So7-extra-backpack;	//已核对 
-	        cout << remain << endl;
 	        break;
     	case 5:
 	        for(int i=0;i<level;i++){
 		      So7 += hydro[i];   
 	        }	
 	      	remain = 271-So7-extra-backpack;	//已核对 
-		    cout << remain << endl;;
-    	break;
+    		break;
 		case 6:
 	        for(int i=0;i<level;i++){
 	        	So7 += pyro[i];  
 	        }
 			remain = 271-So7-extra-backpack;	//已核对 
-	        cout << remain << endl;;
-    	break;
+    		break;
 		case 7:
 	        for(int i=0;i<level;i++){
 	          So7 += newmoon[i];
 	        } 
 			remain = 112-So7-extra-backpack;    //6.0已核对 
-	        cout << remain << endl;
 	        break;
     }	
+    
+	cout << remain << endl;
+    
+    
 }
